@@ -1,0 +1,65 @@
+
+🎯 What DXVK Async Will Bring You:
+
+✅ 1. Massive Smoothness Boost (Huge Stutter Reduction)
+
+Skyrim SE is a DirectX 11 game, but it wasn’t designed to dynamically manage shader compilation like modern engines do.
+
+When using DXVK Async:
+Shaders are compiled asynchronously → no more freezing during compilation.
+Result: You can explore modded areas (Solitude, Falkreath Forest, etc.) without stuttering.
+
+✅ This is the most immediately noticeable benefit.
+
+----------------------------------------------------------------------------
+
+✅ 2. Huge Improvement in 1% and 0.1% Low FPS
+
+1% and 0.1% Low FPS are indicators of micro-freezes or stutters.
+
+With DXVK Async, you might see something like this:
+Before: Avg: 60 FPS / 1% Low: 17 FPS / 0.1% Low: 6 FPS
+After : Avg: 60 FPS / 1% Low: 43 FPS / 0.1% Low: 31 FPS
+
+✅ So you lose far fewer frames during transitions, entering cities, or when new NPCs appear.
+
+----------------------------------------------------------------------------
+
+✅ 3. Better Overall Stability with Heavy Modpacks
+
+DXVK has better video memory management than Skyrim SE’s native D3D11:
+You get smarter memory allocation.
+You avoid some random crashes caused by stacked effects (ENB, SSAO, DoF, LUT, weathers...).
+
+✅ Result: Fewer crashes in complex areas or during long play sessions.
+
+----------------------------------------------------------------------------
+
+✅ 4. Slightly Faster Loading Times
+
+Especially for cell transitions with heavy shaders (interior → exterior), DXVK Async reduces:
+- Micro-loads when opening doors.
+- Entry times into modded cities like Windhelm or Whiterun.
+
+It’s not magic, but you gain a few seconds and experience fewer hitches.
+
+----------------------------------------------------------------------------
+
+✅ 5. DXVK Handles VRAM Much Better Than Native DirectX 11
+
+Skyrim SE under DirectX 11 handles VRAM rigidly and not very efficiently.
+DXVK, even in its Async version, converts D3D11 calls to Vulkan, which allows:
+
+- Better recycling of GPU memory.
+- More flexible management of shader caches, textures, and buffers.
+- Fewer passive memory leaks from heavy effects (e.g., SSAO, DoF, dynamic weather).
+
+✅ Result: Skyrim SE becomes more tolerant of high VRAM usage, meaning fewer crashes when playing for long periods or frequently transitioning between interior/exterior zones.
+
+----------------------------------------------------------------------------
+
+⚠️ What DXVK Async Does Not Improve Directly:
+
+- Your pure average framerate (AVG FPS) won’t radically increase.
+- You won’t "magically gain 20 FPS", but the game will feel twice as smooth because stutters are smoothed out.
+- Script or mod bugs → DXVK does not affect the Papyrus engine or scripts.
